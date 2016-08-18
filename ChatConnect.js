@@ -10,6 +10,8 @@ $(document).ready(function() {
 	message = bot.getMessage();
 	renderChat(message);
 
+sayRandom();
+
     $('body').on('keypress', function(e){
 
     	if(e.keyCode === 13) {
@@ -24,6 +26,13 @@ $(document).ready(function() {
        	}
 
     });
+
+    function sayRandom(){    	
+		var interval = setInterval(function(){
+			message = bot.getMessage('say andom strings');    		
+    		renderChat(message);
+		}, 30000)
+    }
 
 
     function renderChat(message){    	

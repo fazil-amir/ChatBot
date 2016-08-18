@@ -12,6 +12,17 @@ var dictionary =
 			"Hello guys!"
 		]
 	},
+	{
+		"inputString": [
+			"say andom strings"
+		],
+		"responseString" : [
+			"Say something",
+			"Are you sleeping",
+			"what's going on?",
+			"Are you bored?"
+		]
+	},
 	{		
 		"inputString": [
 			"hi how are you",
